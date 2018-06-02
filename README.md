@@ -24,13 +24,13 @@ Pm25 = PM2.5 Value (g/m3) (Useful if using AQI)
 
 Rh = Relative Humidity (%)
 
-Vis = Visibility (km)
+Visibility = Horizontal Visibility (km)
 
 Example:
 
-[Pm25,Rh,vis] = visibility(23,17,-1,6)
+[Pm25,Rh,Visibility] = visibility(23,17,-1,6)
 
-PM2.5 = 6
+PM25 = 6
 
 RH: 68.97340750840588
 
