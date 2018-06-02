@@ -5,11 +5,11 @@ This algorithm estimates horizontal visibility which is intended for flight simu
 
 I have tested the model using landmarks in the city to which I live and it has shown to be fairly accurate (+/- 5km) given the uncertainties in the model, weather data provided, and also in my own observations. I have used airport Metar data to use as inputs for Td and Tw. PM2.5 values are acquirable from various sites, such as https://www.airvisual.com. The model uses Eq 1. and Eq 5 from the Liu et al., paper. Figure 12 shows a nice example of estimated visibility as a function PM2.5 for various RH values. It should be noted also that I have used the upper bounds of uncertainty for the coefficient values as I feel the both weather simulations in P3D/FSX tend to over exaggerate visibility reduction. However, the variance in the ratio of wet to dry light scattering acting as a function of RH is favourable. R2-values show that 93% of the variability in Hygroscopic growth can be explained by RH (see Fig 11.), owing to not significantly large differences in visibility reduction if using the average coefficient values (< +/- 1km).
 
-The inputs are as follows,
-Vis = visibility(Td,Tw,AQI,Pm)
-
-inputs:
-Td = Dry-bulb Temperature (°C)
+The inputs are as follows,\n
+Vis = visibility(Td,Tw,AQI,Pm)\n
+\n
+inputs:\n
+Td = Dry-bulb Temperature (°C)\n
 Tw= Dew-Point Temperature (°C)
 Pm=PM2.5 value (g/m3)
 AQI=Air Quality Index
