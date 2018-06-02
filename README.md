@@ -7,7 +7,7 @@ I have tested the model using landmarks in the city to which I live and it has s
 
 The inputs are as follows,
 
-Vis = visibility(Td,Tw,AQI,Pm)
+[Pm2.5,Rh,Vis] = visibility(Td,Tw,AQI,Pm)
 
 inputs:
 Td = Dry-bulb Temperature (°C)
@@ -25,6 +25,17 @@ Pm25 = PM2.5 Value (g/m3) (Useful if using AQI)
 Rh = Relative Humidity (%)
 
 Vis = Visibility (km)
+
+Example:
+
+[Pm25,Rh,vis] = visibility(23,17,-1,6)
+
+PM2.5 = 6
+
+RH: 68.97340750840588
+
+Visibility = 56 km
+
 
 It should be noted that the AQI is an alternative measure of PM value when PM2.5 is the highest pollutant considered. Please consult Air Quality Index for more information (https://en.wikipedia.org/wiki/Air_quality_index). If you do not want to use AQI, set it to -1. If you choose to use AQI conversion, make sure to set PM=-1. If both are set to -1, there will be an error. 
 
